@@ -1,0 +1,4 @@
+13:26 $ java -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:5005 Application
+Listening for transport dt_socket at address: 5005
++---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+--------$+$$$$$$$$$+$$$$$$$$$+$$$$$$$$$+$$$$$$$$$+$$$$$$$$$+---------+---------+---------+---------+-----@---+---------+---------+---------+---------+---------+---------+---------+----^C✘-INT ~/workspace/bd3/Sprint_1/bd-unit-3-mastery-task-2-FrankJFella/RemoteDebugger/bd_unit_3_application_for_remote_debugging/build/classes/java/main [main|✚ 1]
+13:42 $
