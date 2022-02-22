@@ -9,6 +9,7 @@ public class InvalidBowlerNumberException extends RuntimeException {
 
         // Need a 1-arg String ctor to receive a message and pass it to the super class
         public InvalidBowlerNumberException(String theMessage) {
+
                 super(getCurrentTimeStamp() + theMessage);
         }
 

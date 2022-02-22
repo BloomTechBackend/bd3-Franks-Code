@@ -62,7 +62,7 @@ public class ApplicationProgram {
                                 continue;
                         }
                         try {
-                                int bowlerNumber = Integer.parseInt(response);
+                                int bowlerNumber = Integer.parseInt(response);  // NumberFormatExcpetion if non-numeric entered
                                 ShowBowler(theBowlers.get(bowlerNumber - 1));
                         }
                         catch (NumberFormatException exceptionObj) {
