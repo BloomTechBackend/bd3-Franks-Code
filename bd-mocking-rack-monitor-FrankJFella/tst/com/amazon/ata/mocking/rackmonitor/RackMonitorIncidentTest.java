@@ -9,6 +9,7 @@ import com.amazon.ata.mocking.rackmonitor.exceptions.RackMonitorException;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mock;
+import org.mockito.Mockito;
 
 import java.util.Arrays;
 import java.util.HashMap;
@@ -101,7 +102,7 @@ public class RackMonitorIncidentTest {
 
         // What you tell Mockito is....
         // when you see this method call ,return this value
-        when(aRack.getHealth()).thenReturn(serverHealth);   // Tell Mockito what to return when Rack.getHealth() is called
+        Mockito.when(aRack.getHealth()).thenReturn(serverHealth);   // Tell Mockito what to return when Rack.getHealth() is called
         when(aRack.getUnitForServer(aServer)).thenReturn(1); // Tell Mockito to return the id of our server(1) when getUnitForServer is called
         when(warrantyClient.getWarrantyForServer(aServer)).thenReturn(Warranty.nullWarranty());
 
